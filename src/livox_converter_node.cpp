@@ -97,7 +97,7 @@ public:
         {
             ROS_INFO("Last subscriber disconnected. Unsubscribing from input topic %s", input_topic_.c_str());
             sub_.shutdown();
-            unadvertiseOutputTopic();
+            // We no longer unadvertise the output topic here
         }
     }
 
