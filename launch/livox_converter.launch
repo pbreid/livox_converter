@@ -1,6 +1,6 @@
 <launch>
   <node name="livox_converter" pkg="livox_converter" type="livox_converter_node" output="screen">
-    <param name="input_topic" value="/avia/livox/lidar" />
+    <param name="input_topic" value="/livox/lidar" />
     <param name="output_topic" value="/livox/pointcloud2" />
   </node>
 </launch>
