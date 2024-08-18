@@ -6,10 +6,11 @@ find_package(catkin REQUIRED COMPONENTS
   sensor_msgs
   pcl_ros
   livox_ros_driver
+  livox_ros_driver2
 )
 
 catkin_package(
-  CATKIN_DEPENDS roscpp sensor_msgs pcl_ros livox_ros_driver
+  CATKIN_DEPENDS roscpp sensor_msgs pcl_ros livox_ros_driver livox_ros_driver2
 )
 
 include_directories(

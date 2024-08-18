@@ -1,5 +1,6 @@
 #include <ros/ros.h>
 #include <livox_ros_driver/CustomMsg.h>
+#include <livox_ros_driver2/CustomMsg.h>
 #include <sensor_msgs/PointCloud2.h>
 #include <pcl_conversions/pcl_conversions.h>
 #include <pcl/point_types.h>
@@ -41,6 +42,10 @@ public:
         for (const auto& topic : topic_info)
         {
             if (topic.name == input_topic_ && topic.datatype == "livox_ros_driver/CustomMsg")
+            {
+                found = true;
+                break;
+            } else if (topic.name == input_topic_ && topic.datatype == "livox_ros_driver2/CustomMsg")
             {
                 found = true;
                 break;
